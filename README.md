@@ -10,5 +10,6 @@ Need to create a Django based application with the following features:
 	6. Any registered user can upvote a question, answer.
 	7. Any registered user can downvote a question, answer.
 	8. Any registered user who asked a question can accept a particular answer.
-	9. Any user (even unregistered user) can see all the questions and answers, but cannot ask a question, answer and cannot upvote and downvote any question and answer.
-Any user, can get all the question where a particular tag is used, by pressing a tag
+	9. Any user (even unregistered user) can see all the questions and answers, but cannot ask a question, answer and cannot upvote and 	       downvote any question and answer.
+	10. Any user, can get all the question where a particular tag is used, by pressing a tag
+
