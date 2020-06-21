@@ -1,0 +1,24 @@
+
+{% extends "question/base.html" %}
+
+{% block content %}
+    {% for question in questions %}
+    <article class="media content-section">
+      <img class="rounded-circle article-img" src="{{ question.user.profile.image.url }}">
+
+
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{question.user.username}}</a>
+          <small class="text-muted">{{ question.createdDate }}</small>
+        </div>
+        <h2><a class="article-title" href="{% url 'detail-question' question.id %}">{{ question.questionTitle }}</a></h2>
+        <p class="article-content">{{ question.questionContent }}</p>
+      </div>
+    </article>
+
+
+
+    {% endfor %}
+<!--     <h1>This is a Home page</h1> -->
+{% endblock content %}
